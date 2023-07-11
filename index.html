@@ -6,6 +6,8 @@
     <title>DDESAE</title>
     <script src="https://kit.fontawesome.com/c08ba8a64d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/estilos.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0">
 </head>
 <body>
 
@@ -18,12 +20,12 @@
                 <h1>DDE <b>SA/E</b></h1>
             </div>
 
-            <div class="menu">
+            <div class="menu" id="show-menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Unidades</a></li>
-                        <li class="menu-selected"><a href="#" class="text-menu-selected">Noticias</a></li>
+                        <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                        <li><a href="#"><i class="fa-solid fa-briefcase"></i>Unidades</a></li>
+                        <li class="menu-selected"><a href="#" class="text-menu-selected"><i class="fa-solid fa-newspaper"></i>Noticias</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
@@ -31,9 +33,15 @@
 
         </div>
 
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
     </header>
 
     <!--Portada-->
+    <div class="container-all" id="move-content">
+    
     <div class="container-cover">
         <div class="container-info-cover">
             <h1>"Direccion Distrital de Educación"</h1>
@@ -141,6 +149,10 @@
 
         </footer>
     </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
