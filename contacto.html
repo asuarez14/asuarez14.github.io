@@ -26,7 +26,7 @@
                     <ul>
                         <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
                         <li><a href="personal.html"><i class="fa-solid fa-briefcase"></i>Personal</a></li>
-                        <li><a href="#"><i class="fa-solid fa-newspaper"></i>Noticias</a></li>
+                        <li><a href="noticias.html"><i class="fa-solid fa-newspaper"></i>Noticias</a></li>
                         <li class="menu-selected"><a href="#" class="text-menu-selected"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
                     </ul>
                 </nav>
@@ -44,24 +44,27 @@
         <div class="contactForm">
             <div class="form">
                 <div class="texto">
-                    <h2>Contáctanos</h2>
+                    <h2>¡Contáctanos!</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veritatis modi id quasi adipisci quam corporis, aspernatur, qui nihil sed, impedit accusamus provident illo possimus?</p>
                 </div>
 
-                <form action="">
+                <form action="https://formsubmit.co/ddesantaanaexaltacion@gmail.com" method="POST">
                     <div class="inputBox">
                         <label for="">Tu Nombre</label>
-                        <input type="text" placeholder="Nombre...">
+                        <input type="text" name="Nombre" placeholder="Nombre...">
                     </div>
                     <div class="inputBox">
                         <label for="">Tu Correo</label>
-                        <input type="email" placeholder="Correo...">
+                        <input type="email" name="Correo" placeholder="Correo...">
                     </div>
                     <div class="inputBox">
                         <label for="">Tu Mensaje</label>
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje..."></textarea>
+                        <textarea name="Mensaje" id="" cols="30" rows="5" placeholder="Mensaje..."></textarea>
                     </div>
                     <input type="submit" value="Enviar Mensaje">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
             <div class="info">
